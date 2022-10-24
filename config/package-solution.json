@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "cyberint-birthdays-client-side-solution",
+    "id": "aebd1a59-76b5-47fa-b976-a2913b62fccf",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.15.2"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "cyberint-birthdays description"
+      },
+      "longDescription": {
+        "default": "cyberint-birthdays description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "cyberint-birthdays Feature",
+        "description": "The feature that activates elements of the cyberint-birthdays solution.",
+        "id": "0d4f7041-1fb3-46e0-8dfc-22cc0927cc92",
+        "version": "1.0.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/cyberint-birthdays.sppkg"
+  }
+}

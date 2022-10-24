@@ -1,0 +1,16 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "plusBeta": false,
+    "isCreatingSolution": true,
+    "version": "1.15.2",
+    "libraryName": "cyberint-birthdays",
+    "libraryId": "aebd1a59-76b5-47fa-b976-a2913b62fccf",
+    "environment": "spo",
+    "packageManager": "npm",
+    "solutionName": "cyberint-birthdays",
+    "solutionShortDescription": "cyberint-birthdays description",
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "componentType": "webpart"
+  }
+}

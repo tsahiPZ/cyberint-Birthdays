@@ -1,0 +1,310 @@
+@import '../../../../../node_modules/placeholder-loading/src/scss/placeholder-loading.scss';
+
+.birthday {
+    height: 30%;
+    background: linear-gradient(180deg, #22b387 0%, #4cd2aa 100%);
+    border-radius: 15px;
+    // padding: 2% 4%;
+    padding: 8px 25px 8px 25px;
+    overflow: hidden;
+    margin: 0 4.25px 8.5px 4.25px;
+
+    >span {
+        text-transform: uppercase;
+        font-family: "Rubik";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        color: #ffffff;
+    }
+}
+
+.peopleList {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    list-style-type: none;
+    padding-inline-start: 0;
+    padding-top: 4%;
+    margin: 0;
+}
+
+.peopleListWithAnimation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    width: 120%;
+    list-style-type: none;
+    padding-inline-start: 0;
+    padding-top: 1%;
+    margin: 0;
+    animation: scrollPepoleAnimation 15s linear infinite;
+
+    &:hover {
+        animation-play-state: paused;
+    }
+}
+
+// li
+.birthdayPeople {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    cursor: pointer;
+    z-index: 10;
+    transition: 0.3s;
+
+    &:hover {
+        transform: translateY(-10%);
+    }
+
+    >span {
+        font-family: "Rubik";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        color: #ffffff;
+        pointer-events: none;
+    }
+}
+
+.peopleImg {
+    object-fit: cover;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 1%;
+    border: 3px solid #bafffb;
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.redX {
+    display: flex;
+    align-items: flex-end;
+    height: 50%;
+    font-size: 100px;
+    color: red;
+}
+
+// Modal
+
+.popover,
+.show,
+.bs-popover-auto {
+    top: -5% !important;
+}
+
+.emailModal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 40%;
+    width: 272px;
+    height: 230px;
+    background-color: #eeeded;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+    z-index: 20;
+    transform: translate(90px, -55px);
+}
+
+.popoverContainer {
+    top: -5% !important;
+    background-color: #eeeded;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+}
+
+.modalHeader {
+    padding: 9% 0 0 0;
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 17px;
+    color: #514f4f;
+    text-align: center;
+    white-space: wrap;
+    text-overflow: ellipsis;
+}
+
+.emailMsg {
+    padding: 0 4%;
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+}
+
+.emailImg {
+    padding-bottom: 10%;
+}
+
+.modalTriangle {
+    position: absolute;
+    top: 99%;
+    right: 30%;
+    width: 100%;
+    height: 18%;
+    background-color: #eeeded;
+    clip-path: polygon(44% 100%, 42% 0, 50% 0);
+}
+
+.closeModalContainer {
+    position: fixed;
+    cursor: default;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 5;
+}
+
+.loaderContainer {
+    height: 30%;
+    border-radius: 30px;
+    margin: 0;
+
+    >* {
+        > :first-child {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 5px;
+        }
+
+        > :last-child {
+            width: 80px;
+        }
+
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        // flex-direction: column;
+        // width: 100%;
+    }
+}
+
+@keyframes scrollPepoleAnimation {
+    0% {
+        left: 0%;
+    }
+
+    50% {
+        left: 50%;
+    }
+
+    100% {
+        left: 0%;
+    }
+}
+
+.inputContainer {
+    // Input & img div
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border-top: 1px solid #dbdbdb;
+
+    > :first-child {
+        // Input
+        width: 77%;
+        margin: 1% 4% 2% 7%;
+        background-color: #eeeded;
+        border: none;
+    }
+
+    >img {
+        width: 9%;
+        margin: 0 7% 0 0;
+        cursor: pointer;
+        transition: 0.3s;
+        animation: slideSendButton 1s infinite;
+
+        &:hover {
+            animation-play-state: paused;
+        }
+    }
+}
+
+.emailSend {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.placeholderStyle {
+    font-family: "Rubik" !important;
+}
+
+@keyframes scrollPepoleAnimation {
+    0% {
+        left: 0%;
+    }
+
+    50% {
+        left: 50%;
+    }
+
+    100% {
+        left: 0%;
+    }
+}
+
+@keyframes scrollPepoleAnimation {
+    0% {
+        -moz-transform: translateX(0);
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+
+    5% {
+        -moz-transform: translateX(0);
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+
+    50% {
+        -moz-transform: translateX(-15%);
+        -webkit-transform: translateX(-15%);
+        transform: translateX(-15%);
+    }
+
+    55% {
+        -moz-transform: translateX(-15%);
+        -webkit-transform: translateX(-15%);
+        transform: translateX(-15%);
+    }
+
+    100% {
+        -moz-transform: translateX(0);
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideSendButton {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(13%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}

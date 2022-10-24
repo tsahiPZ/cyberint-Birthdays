@@ -1,0 +1,50 @@
+{
+  "name": "cyberint-birthdays",
+  "version": "0.0.1",
+  "private": true,
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "gulp bundle",
+    "clean": "gulp clean",
+    "test": "gulp test"
+  },
+  "dependencies": {
+    "tslib": "2.3.1",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "office-ui-fabric-react": "7.185.7",
+    "@microsoft/sp-core-library": "1.15.2",
+    "@microsoft/sp-property-pane": "1.15.2",
+    "@microsoft/sp-webpart-base": "1.15.2",
+    "@microsoft/sp-lodash-subset": "1.15.2",
+    "@microsoft/sp-office-ui-fabric-core": "1.15.2",
+    "@material-ui/core": "^4.12.4",
+    "@material-ui/icons": "^4.11.3",
+    "@microsoft/sp-component-base": "^1.15.2",
+    "@pnp/graph": "^3.5.1",
+    "@pnp/sp": "^3.5.1",
+    "@pnp/spfx-controls-react": "^2.7.0",
+    "bootstrap": "^5.0.2",
+    "material-ui-popup-state": "^4.0.2",
+    "moment": "^2.29.4",
+    "placeholder-loading": "^0.6.0",
+    "react-html-parser": "^2.0.2",
+    "react-slideshow-image": "^4.0.4",
+    "reactstrap": "^8.9.0"
+  },
+  "devDependencies": {
+    "@microsoft/rush-stack-compiler-4.5": "0.2.2",
+    "@rushstack/eslint-config": "2.5.1",
+    "@microsoft/eslint-plugin-spfx": "1.15.2",
+    "@microsoft/eslint-config-spfx": "1.15.2",
+    "@microsoft/sp-build-web": "1.15.2",
+    "@types/webpack-env": "~1.15.2",
+    "ajv": "^6.12.5",
+    "gulp": "4.0.2",
+    "typescript": "4.5.5",
+    "@types/react": "16.9.51",
+    "@types/react-dom": "16.9.8",
+    "eslint-plugin-react-hooks": "4.3.0",
+    "@microsoft/sp-module-interfaces": "1.15.2"
+  }
+}
